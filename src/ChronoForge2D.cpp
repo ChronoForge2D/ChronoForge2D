@@ -33,7 +33,7 @@ int main() {
         "ChronoForge2D",
         "ChronoForge2D - The simple 2D Game-Engine!",
         WS_OVERLAPPEDWINDOW,
-        100, 100, 800, 600,
+        100, 100, 1280, 720,
         NULL, NULL, GetModuleHandle(0), NULL
     );
 
