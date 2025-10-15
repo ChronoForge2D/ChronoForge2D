@@ -37,8 +37,11 @@ void GameObject::draw() {
     glPopMatrix();
 }
 
-void GameObject::remove() {
+void GameObject::hide() {
     this->isActive = false;
+    /*
+        В будущем дополнить, чтобы было полное удаление объекта, а не просто скрытие его из экрана
+    */
 }
 
 void GameObject::setPosition(float posX, float posY) {

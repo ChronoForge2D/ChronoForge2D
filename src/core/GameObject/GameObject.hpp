@@ -14,7 +14,7 @@ public:
     GameObject(float posX, float posY, int widthX, int widthY, std::string name, std::string description, bool isActive = true);
     GameObject(float posX, float posY, int widthX, int widthY, std::string name, std::string description, float r, float g, float b, bool isActive = true);
     void draw();
-    void remove();
+    void hide();
     void setPosition(float posX, float posY);
     std::pair<float, float> getPosition();
     std::string getName();
