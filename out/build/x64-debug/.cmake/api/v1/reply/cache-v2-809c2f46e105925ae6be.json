@@ -39,7 +39,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/ChronoForge2D/out/build/x64-debug"
+			"value" : "f:/ChronoForge2D/out/build/x64-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+			"value" : "/DWIN32 /D_WINDOWS /GR /EHsc"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_DEBUG",
@@ -159,7 +159,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/MDd /Ob0 /Od /RTC1"
+			"value" : "/Zi /Ob0 /Od /RTC1"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_MINSIZEREL",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/MD /O1 /Ob1 /DNDEBUG"
+			"value" : "/O1 /Ob1 /DNDEBUG"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_RELEASE",
@@ -191,7 +191,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/MD /O2 /Ob2 /DNDEBUG"
+			"value" : "/O2 /Ob2 /DNDEBUG"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
@@ -207,7 +207,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/MD /O2 /Ob1 /DNDEBUG"
+			"value" : "/Zi /O2 /Ob1 /DNDEBUG"
 		},
 		{
 			"name" : "CMAKE_CXX_STANDARD_LIBRARIES",
@@ -255,7 +255,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/DWIN32 /D_WINDOWS /W3"
+			"value" : "/DWIN32 /D_WINDOWS"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_DEBUG",
@@ -271,7 +271,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/MDd /Ob0 /Od /RTC1"
+			"value" : "/Zi /Ob0 /Od /RTC1"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_MINSIZEREL",
@@ -287,7 +287,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/MD /O1 /Ob1 /DNDEBUG"
+			"value" : "/O1 /Ob1 /DNDEBUG"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_RELEASE",
@@ -303,7 +303,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/MD /O2 /Ob2 /DNDEBUG"
+			"value" : "/O2 /Ob2 /DNDEBUG"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_RELWITHDEBINFO",
@@ -319,7 +319,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/MD /O2 /Ob1 /DNDEBUG"
+			"value" : "/Zi /O2 /Ob1 /DNDEBUG"
 		},
 		{
 			"name" : "CMAKE_C_STANDARD_LIBRARIES",
@@ -483,7 +483,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/ChronoForge2D/out/build/x64-debug/CMakeFiles/pkgRedirects"
+			"value" : "F:/ChronoForge2D/out/build/x64-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/ChronoForge2D"
+			"value" : "F:/ChronoForge2D"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -555,7 +555,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/ChronoForge2D/out/install/x64-debug"
+			"value" : "F:/ChronoForge2D/out/install/x64-debug"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -740,6 +740,66 @@
 			],
 			"type" : "STATIC",
 			"value" : "ChronoForge2D"
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "0.1.0"
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION_MAJOR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "0"
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION_MINOR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "1"
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION_PATCH",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "0"
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION_TWEAK",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1091,7 +1151,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/ChronoForge2D/out/build/x64-debug"
+			"value" : "F:/ChronoForge2D/out/build/x64-debug"
 		},
 		{
 			"name" : "ChronoForge2D_IS_TOP_LEVEL",
@@ -1115,7 +1175,111 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/ChronoForge2D"
+			"value" : "F:/ChronoForge2D"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_OpenGL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding OpenGL"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[opengl32][c ][v()]"
+		},
+		{
+			"name" : "GLAD_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "GLAD_INCLUDE_DIR-NOTFOUND"
+		},
+		{
+			"name" : "GLAD_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "GLAD_LIBRARY-NOTFOUND"
+		},
+		{
+			"name" : "OPENGL_gl_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "OpenGL library for win32"
+				}
+			],
+			"type" : "STRING",
+			"value" : "opengl32"
+		},
+		{
+			"name" : "OPENGL_glu_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "GLU library for win32"
+				}
+			],
+			"type" : "STRING",
+			"value" : "glu32"
+		},
+		{
+			"name" : "SDL2_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for SDL2."
+				}
+			],
+			"type" : "PATH",
+			"value" : "SDL2_DIR-NOTFOUND"
+		},
+		{
+			"name" : "SDL2_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "SDL2_INCLUDE_DIRS-NOTFOUND"
+		},
+		{
+			"name" : "SDL2_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "SDL2_LIBRARIES-NOTFOUND"
 		}
 	],
 	"kind" : "cache",

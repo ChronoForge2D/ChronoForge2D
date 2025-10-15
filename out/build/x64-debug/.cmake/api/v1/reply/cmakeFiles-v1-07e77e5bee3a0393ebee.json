@@ -184,8 +184,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/ChronoForge2D/out/build/x64-debug",
-		"source" : "C:/ChronoForge2D"
+		"build" : "F:/ChronoForge2D/out/build/x64-debug",
+		"source" : "F:/ChronoForge2D"
 	},
 	"version" : 
 	{
