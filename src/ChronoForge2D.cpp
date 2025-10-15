@@ -4,6 +4,7 @@
 #include <iostream>
 
 #include "core/GameObject/GameObject.hpp"
+#include "config/WindowConfig.hpp"
 
 std::vector<GameObject> gameObjects;
 
@@ -49,7 +50,7 @@ int main() {
         "ChronoForge2D",
         "ChronoForge2D - The simple 2D Game-Engine!",
         WS_OVERLAPPEDWINDOW,
-        100, 100, 1280, 720,
+        100, 100, WindowConfig["sizeX"], WindowConfig["sizeY"],
         NULL, NULL, GetModuleHandle(0), NULL
     );
 
