@@ -4,21 +4,24 @@
 #include <Windows.h>
 #include <gl/GL.h>
 
-GameObject::GameObject(float posX, float posY, int widthX, int widthY, std::string name, std::string description)
-    : position(posX, posY), widthX(widthX), widthY(widthY), name(name), description(description) {
+GameObject::GameObject(float posX, float posY, int widthX, int widthY, std::string name, std::string description, bool isActive)
+    : position(posX, posY), widthX(widthX), widthY(widthY), name(name), description(description), isActive(isActive) {
     color[0] = 1.0f; // Красный по умолчанию
     color[1] = 1.0f; // Зеленый
     color[2] = 1.0f; // Синий
 }
 
-GameObject::GameObject(float posX, float posY, int widthX, int widthY, std::string name, std::string description, float r, float g, float b)
-    : position(posX, posY), widthX(widthX), widthY(widthY), name(name), description(description) {
+GameObject::GameObject(float posX, float posY, int widthX, int widthY, std::string name, std::string description, float r, float g, float b, bool isActive)
+    : position(posX, posY), widthX(widthX), widthY(widthY), name(name), description(description), isActive(isActive) {
     color[0] = r;
     color[1] = g;
     color[2] = b;
 }
 
 void GameObject::draw() {
+
+    if (!this->isActive) return;
+
     glPushMatrix();
     glTranslatef(position.first, position.second, 0.0f);
 
@@ -32,6 +35,10 @@ void GameObject::draw() {
     glEnd();
 
     glPopMatrix();
+}
+
+void GameObject::remove() {
+    this->isActive = false;
 }
 
 void GameObject::setPosition(float posX, float posY) {
