@@ -10,11 +10,10 @@ std::vector<GameObject> gameObjects;
 // Функция для инициализации игровых объектов
 void initializeGameObjects() {
     // Создаем несколько тестовых объектов
-    gameObjects.push_back(GameObject(0.0f, 0.0f, 50, 50, "Player", "Main character", 1.0f, 0.0f, 0.0f)); // Красный
-    gameObjects.push_back(GameObject(-0.3f, 0.2f, 30, 30, "Enemy1", "First enemy", 0.0f, 1.0f, 0.0f));  // Зеленый
-    gameObjects.push_back(GameObject(0.4f, -0.1f, 40, 40, "Crate", "Wooden crate", 0.8f, 0.6f, 0.2f));  // Коричневый
-    gameObjects.push_back(GameObject(0.1f, 0.3f, 25, 25, "Coin", "Gold coin", 1.0f, 1.0f, 0.0f));       // Желтый
-}
+    gameObjects.push_back(GameObject(0.0f, 0.0f, 50, 50, "Player", "Main character", 1.0f, 0.0f, 0.0f));
+    gameObjects.push_back(GameObject(-0.3f, 0.2f, 30, 30, "Enemy1", "First enemy", 0.0f, 1.0f, 0.0f));  
+    gameObjects.push_back(GameObject(0.4f, -0.1f, 40, 40, "Crate", "Wooden crate", 0.8f, 0.6f, 0.2f));  
+    gameObjects.push_back(GameObject(0.1f, 0.3f, 25, 25, "Coin", "Gold coin", 1.0f, 1.0f, 0.0f));     
 
 // Функция для отрисовки всех игровых объектов
 void drawAllGameObjects() {
