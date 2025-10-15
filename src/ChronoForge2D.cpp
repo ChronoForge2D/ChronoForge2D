@@ -1,5 +1,27 @@
 ﻿#include <Windows.h>
 #include <gl/GL.h>
+#include <vector>
+#include <iostream>
+
+#include "GameObject.hpp"
+
+std::vector<GameObject> gameObjects;
+
+// Функция для инициализации игровых объектов
+void initializeGameObjects() {
+    // Создаем несколько тестовых объектов
+    gameObjects.push_back(GameObject(0.0f, 0.0f, 50, 50, "Player", "Main character", 1.0f, 0.0f, 0.0f)); // Красный
+    gameObjects.push_back(GameObject(-0.3f, 0.2f, 30, 30, "Enemy1", "First enemy", 0.0f, 1.0f, 0.0f));  // Зеленый
+    gameObjects.push_back(GameObject(0.4f, -0.1f, 40, 40, "Crate", "Wooden crate", 0.8f, 0.6f, 0.2f));  // Коричневый
+    gameObjects.push_back(GameObject(0.1f, 0.3f, 25, 25, "Coin", "Gold coin", 1.0f, 1.0f, 0.0f));       // Желтый
+}
+
+// Функция для отрисовки всех игровых объектов
+void drawAllGameObjects() {
+    for (auto& obj : gameObjects) {
+        obj.draw();
+    }
+}
 
 // Функция для обработки событий окна
 LRESULT CALLBACK WindowProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
@@ -48,10 +70,10 @@ int main() {
         1,
         PFD_DRAW_TO_WINDOW | PFD_SUPPORT_OPENGL | PFD_DOUBLEBUFFER,
         PFD_TYPE_RGBA,
-        32, // бит на пиксель
+        32,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        24, // буфер глубины
-        8,  // буфер трафарета
+        24,
+        8,
         0, 0, 0, 0, 0, 0
     };
 
@@ -62,7 +84,10 @@ int main() {
     wglMakeCurrent(deviceContext, renderContext);
 
     // Устанавливаем синий цвет фона
-    glClearColor(0.0f, 0.5f, 1.0f, 1.0f);
+    glClearColor(0.2f, 0.3f, 0.5f, 1.0f);
+
+    // Инициализируем игровые объекты
+    initializeGameObjects();
 
     // 4. Главный цикл программы
     MSG msg;
@@ -81,13 +106,8 @@ int main() {
             // Очищаем экран
             glClear(GL_COLOR_BUFFER_BIT);
 
-            // Рисуем красный треугольник
-            glBegin(GL_TRIANGLES);
-            glColor3f(1.0f, 0.0f, 0.0f);  // Красный цвет
-            glVertex2f(0.0f, 0.5f);       // Верхняя вершина
-            glVertex2f(-0.5f, -0.5f);     // Левая нижняя
-            glVertex2f(0.5f, -0.5f);      // Правая нижняя
-            glEnd();
+            // Рисуем все игровые объекты
+            drawAllGameObjects();
 
             // Показываем нарисованное
             SwapBuffers(deviceContext);
