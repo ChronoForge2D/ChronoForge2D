@@ -2,7 +2,7 @@
 
 [![Language](https://img.shields.io/badge/language-C%2B%2B-%23f34b7d.svg)](https://en.wikipedia.org/wiki/C%2B%2B)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-important)]()
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-important)]()
 [![Status](https://img.shields.io/badge/status-active%20development-brightgreen)]()
 
 **ChronoForge2D** — это высокопроизводительный 2D игровой движок, выкованный на C++ с использованием современной архитектуры Entity-Component-System (ECS). Идеальный фундамент для создания ваших следующих игровых проектов.
