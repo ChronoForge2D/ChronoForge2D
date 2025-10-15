@@ -6,9 +6,9 @@
 
 GameObject::GameObject(float posX, float posY, int widthX, int widthY, std::string name, std::string description, bool isActive)
     : position(posX, posY), widthX(widthX), widthY(widthY), name(name), description(description), isActive(isActive) {
-    color[0] = 1.0f; // Красный по умолчанию
-    color[1] = 1.0f; // Зеленый
-    color[2] = 1.0f; // Синий
+    color[0] = 1.0f;
+    color[1] = 1.0f;
+    color[2] = 1.0f;
 }
 
 GameObject::GameObject(float posX, float posY, int widthX, int widthY, std::string name, std::string description, float r, float g, float b, bool isActive)
