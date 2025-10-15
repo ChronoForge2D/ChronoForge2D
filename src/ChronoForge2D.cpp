@@ -82,19 +82,14 @@ int main() {
 
     HGLRC renderContext = wglCreateContext(deviceContext);
     wglMakeCurrent(deviceContext, renderContext);
-
-    // Устанавливаем синий цвет фона
     glClearColor(0.2f, 0.3f, 0.5f, 1.0f);
-
-    // Инициализируем игровые объекты
     initializeGameObjects();
 
-    // 4. Главный цикл программы
     MSG msg;
     bool running = true;
 
     while (running) {
-        // Обрабатываем сообщения Windows
+
         if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE)) {
             if (msg.message == WM_QUIT) {
                 running = false;
@@ -103,18 +98,14 @@ int main() {
             DispatchMessage(&msg);
         }
         else {
-            // Очищаем экран
+
             glClear(GL_COLOR_BUFFER_BIT);
-
-            // Рисуем все игровые объекты
             drawAllGameObjects();
-
-            // Показываем нарисованное
             SwapBuffers(deviceContext);
         }
     }
 
-    // 5. Очистка ресурсов
+
     wglMakeCurrent(NULL, NULL);
     wglDeleteContext(renderContext);
     ReleaseDC(window, deviceContext);
