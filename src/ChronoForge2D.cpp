@@ -3,7 +3,7 @@
 #include <vector>
 #include <iostream>
 
-#include "GameObject.hpp"
+#include "core/GameObject/GameObject.hpp"
 
 std::vector<GameObject> gameObjects;
 
