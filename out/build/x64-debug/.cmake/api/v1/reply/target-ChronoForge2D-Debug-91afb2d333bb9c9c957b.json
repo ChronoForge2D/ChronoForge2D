@@ -112,12 +112,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ChronoForge2D.cpp",
+			"path" : "src/ChronoForge2D.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "ChronoForge2D.h",
+			"path" : "src/ChronoForge2D.h",
 			"sourceGroupIndex" : 1
 		}
 	],

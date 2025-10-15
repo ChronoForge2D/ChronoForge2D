@@ -12,7 +12,7 @@ endif()
 project ("ChronoForge2D")
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (ChronoForge2D "ChronoForge2D.cpp" "ChronoForge2D.h")
+add_executable (ChronoForge2D "src/ChronoForge2D.cpp" "src/ChronoForge2D.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET ChronoForge2D PROPERTY CXX_STANDARD 20)
