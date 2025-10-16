@@ -1,14 +1,24 @@
 #include "GameObject.hpp"
 #include <iostream>
+#include <vector>
 #define WIN32_LEAN_AND_MEAN
 #include <Windows.h>
 #include <gl/GL.h>
+
+// ”Ѕ–ј“№ эту строку - неправильно
+// GameObject::std::vector<GameObject> gameObjects;
+
+// ƒќЅј¬»“№ глобальный массив
+std::vector<GameObject*> gameObjects;
 
 GameObject::GameObject(float posX, float posY, int widthX, int widthY, std::string name, std::string description, bool isActive)
     : position(posX, posY), widthX(widthX), widthY(widthY), name(name), description(description), isActive(isActive) {
     color[0] = 1.0f;
     color[1] = 1.0f;
     color[2] = 1.0f;
+
+    // ј¬“ќћј“»„≈— » добавл€ем объект в массив при создании
+    gameObjects.push_back(this);
 }
 
 GameObject::GameObject(float posX, float posY, int widthX, int widthY, std::string name, std::string description, float r, float g, float b, bool isActive)
@@ -16,6 +26,9 @@ GameObject::GameObject(float posX, float posY, int widthX, int widthY, std::stri
     color[0] = r;
     color[1] = g;
     color[2] = b;
+
+    // ј¬“ќћј“»„≈— » добавл€ем объект в массив при создании
+    gameObjects.push_back(this);
 }
 
 void GameObject::draw() {
