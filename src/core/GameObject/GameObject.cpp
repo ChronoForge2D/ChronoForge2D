@@ -5,9 +5,6 @@
 #include <Windows.h>
 #include <gl/GL.h>
 
-// ”Ѕ–ј“№ эту строку - неправильно
-// GameObject::std::vector<GameObject> gameObjects;
-
 // ƒќЅј¬»“№ глобальный массив
 std::vector<GameObject*> gameObjects;
 
